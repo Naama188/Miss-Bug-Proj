@@ -1,10 +1,30 @@
-import express from 'express'
-import cookieParser from 'cookie-parser'
+import express from "express";
+import cookieParser from "cookie-parser";
+import { bugService } from "./servers/bugService.js";
 
-const app = express()
-app.use(express.json())
-app.use(cookieParser())
+const app = express();
+app.use(express.json());
+app.use(cookieParser());
 
-app.get('/', (req, res) => res.send('Hello there'))
+app.get("/", (req, res) => res.send("Hello there"));
 
-app.listen(3030, () => console.log('Server ready at port 3030'))
+
+//*Read
+app.get("/api/bug", (req, res) => {
+  bugService
+    .query()
+    .then((bugs) => res.send(bugs))
+    .catch((err) => {
+      console.log("err:", err);
+      res.status(500).send("Cannot load bugs");
+    });
+});
+
+//*Get/Read by id
+
+
+// app.get('/api/bug/save', (req, res) => {})
+// app.get('/api/bug/:bugId', (req, res) => {})
+// app.get('/api/bug/:bugId/remove', (req, res) => {})
+
+app.listen(3031, () => console.log("Server ready at port 3031"));
