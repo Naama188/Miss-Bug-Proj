@@ -20,6 +20,11 @@ app.get("/api/bug", (req, res) => {
     });
 });
 
+
+//*Save
+
+// app.get('/api/bug/save', (req, res) => {})
+
 //*Get/Read by id
 
 app.get("/api/bug/:bugId", (req, res) => {
@@ -44,7 +49,6 @@ app.get('/api/bug/:bugId/remove', (req, res) => {
     });  
 })
 
-// app.get('/api/bug/save', (req, res) => {})
 
 
 
