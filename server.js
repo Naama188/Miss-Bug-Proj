@@ -8,8 +8,8 @@ app.use(cookieParser());
 
 app.get("/", (req, res) => res.send("Hello there"));
 
-
 //*Read
+
 app.get("/api/bug", (req, res) => {
   bugService
     .query()
@@ -22,9 +22,19 @@ app.get("/api/bug", (req, res) => {
 
 //*Get/Read by id
 
+app.get("/api/bug/:bugId", (req, res) => {
+  const { bugId } = req.params;
+  bugService
+    .getById(bugId)
+    .then((bug) => res.send(bug))
+    .catch((err) => {
+      console.log("err:", err);
+      res.status(500).send("Cannot load bugs");
+    });
+});
 
 // app.get('/api/bug/save', (req, res) => {})
-// app.get('/api/bug/:bugId', (req, res) => {})
+
 // app.get('/api/bug/:bugId/remove', (req, res) => {})
 
 app.listen(3031, () => console.log("Server ready at port 3031"));
