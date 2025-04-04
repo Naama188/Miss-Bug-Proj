@@ -1,24 +1,17 @@
 [
     {
+        "_id": "UG2AG",
+        "title": "Bug test",
+        "description": "undefined",
+        "severity": 2,
+        "createdAt": 1743796476178
+    },
+    {
         "_id": "abc125",
         "title": "Button not responsive",
         "description": "Button does not respond to clicks",
         "severity": 1,
         "createdAt": 1542107359456
-    },
-    {
-        "_id": "abc126",
-        "title": "Form validation fails",
-        "description": "Form inputs are not validated properly",
-        "severity": 4,
-        "createdAt": 1542107359457
-    },
-    {
-        "_id": "abc127",
-        "title": "API response delay",
-        "description": "API takes too long to respond",
-        "severity": 3,
-        "createdAt": 1542107359458
     },
     {
         "_id": "abc128",

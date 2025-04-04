@@ -1,2 +1,19 @@
 2.4.2025, 15:09:16 - INFO - Server listening on port http://127.0.0.1:3031/
 2.4.2025, 15:17:26 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 20:55:18 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 20:59:36 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:02:13 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:20:04 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:20:34 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:27:34 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:27:49 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:31:10 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:43:27 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:48:34 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 21:48:46 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 22:40:56 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 22:51:52 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 22:53:30 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 22:54:07 - INFO - Server listening on port http://127.0.0.1:3031/
+4.4.2025, 22:54:36 - DEBUG - req.query | {"title":"Bug test","description":"undefined","severity":"3"}
+4.4.2025, 22:54:46 - DEBUG - req.query | {"title":"Bug test","description":"undefined","severity":"2","_id":"UG2AG"}

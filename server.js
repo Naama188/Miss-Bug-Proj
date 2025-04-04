@@ -1,11 +1,17 @@
 import express from "express";
 import cookieParser from "cookie-parser";
-import { bugService } from "./servers/bugService.js";
-import { loggerService } from './servers/logger.service.js'
+import { bugService } from "./services/bugService.js";
+import { loggerService } from './services/logger.service.js'
 
 const app = express();
+
+// App Configuration
+app.use(express.static('public'))
+
 app.use(express.json());
 app.use(cookieParser());
+
+
 
 app.get("/", (req, res) => res.send("Hello there"));
 
