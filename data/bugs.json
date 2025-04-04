@@ -1,9 +1,23 @@
 [
     {
+        "_id": "Rkmvl",
+        "title": "Bug 22",
+        "description": "blabla",
+        "severity": 3,
+        "createdAt": 1743798143232
+    },
+    {
+        "_id": "g8tyC",
+        "title": "Bug test2",
+        "description": "undefined",
+        "severity": 3,
+        "createdAt": 1743798014400
+    },
+    {
         "_id": "UG2AG",
         "title": "Bug test",
         "description": "undefined",
-        "severity": 2,
+        "severity": 4,
         "createdAt": 1743796476178
     },
     {

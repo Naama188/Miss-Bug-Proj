@@ -17,3 +17,6 @@
 4.4.2025, 22:54:07 - INFO - Server listening on port http://127.0.0.1:3031/
 4.4.2025, 22:54:36 - DEBUG - req.query | {"title":"Bug test","description":"undefined","severity":"3"}
 4.4.2025, 22:54:46 - DEBUG - req.query | {"title":"Bug test","description":"undefined","severity":"2","_id":"UG2AG"}
+4.4.2025, 23:05:39 - DEBUG - req.query | {"title":"Bug test","description":"undefined","severity":"4","_id":"UG2AG"}
+4.4.2025, 23:20:14 - DEBUG - req.query | {"title":"Bug test2","description":"undefined","severity":"3"}
+4.4.2025, 23:22:23 - DEBUG - req.query | {"title":"Bug 22","description":"blabla","severity":"3"}
