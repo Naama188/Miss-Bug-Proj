@@ -51,19 +51,23 @@ app.get('/api/bug/save', (req, res) => {
 })
 
 
-// app.get('/api/bug/save', (req, res) => {})
-
 //*Get/Read by id
 
-app.get("/api/bug/:bugId", (req, res) => {
-  const { bugId } = req.params;
-  bugService.getById(bugId)
-    .then((bug) => res.send(bug))
-    .catch((err) => {
-        loggerService.error('Cannot get bug', err);
-      res.status(500).send("Cannot load bugs");
-    });
-});
+app.get('/api/bug/:bugId', (req, res) => {
+    const { bugId } = req.params
+    const { visitCountMap = [] } = req.cookies 
+
+    if (visitCountMap.length >= 3) return res.status(401).send('Wait for a bit')
+    if (!visitCountMap.includes(bugId)) visitCountMap.push(bugId)
+
+    res.cookie('visitCountMap', visitCountMap, { maxAge: 1000 * 10 })
+    bugService.getById(bugId)
+        .then(bug => res.send(bug))
+        .catch(err => {
+            loggerService.error('Cannot get bug', err)
+            res.status(400).send('Cannot get bug')
+        })
+})
 
 //*Remove
 
