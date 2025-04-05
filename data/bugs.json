@@ -1,65 +1,92 @@
 [
-    {
-        "_id": "Rkmvl",
-        "title": "Bug 22",
-        "description": "blabla",
-        "severity": 3,
-        "createdAt": 1743798143232
+    { 
+        "_id": "abc123", 
+        "title": "Cannot save a new car", 
+        "description": "Problem when clicking Save", 
+        "severity": 3, 
+        "createdAt": 1542107359454,
+        "labels": "['critical', 'need-CR', 'dev-branch','stuck']"
     },
-    {
-        "_id": "g8tyC",
-        "title": "Bug test2",
-        "description": "undefined",
-        "severity": 3,
-        "createdAt": 1743798014400
+
+    { 
+        "_id": "abc124", 
+        "title": "Page crashes on load", 
+        "description": "App crashes after clicking submit button", 
+        "severity": 2, 
+        "createdAt": 1542107359455,
+        "labels": "['front', 'in progress']" 
     },
-    {
-        "_id": "UG2AG",
-        "title": "Bug test",
-        "description": "undefined",
-        "severity": 4,
-        "createdAt": 1743796476178
+
+    { 
+        "_id": "abc125", 
+        "title": "Button not responsive", 
+        "description": "Button does not respond to clicks", 
+        "severity": 1, 
+        "createdAt": 1542107359456 ,
+        "labels": "['back', 'critical']"
     },
-    {
-        "_id": "abc125",
-        "title": "Button not responsive",
-        "description": "Button does not respond to clicks",
-        "severity": 1,
-        "createdAt": 1542107359456
+
+    { 
+        "_id": "abc126", 
+        "title": "Form validation fails", 
+        "description": "Form inputs are not validated properly", 
+        "severity": 4, 
+        "createdAt": 1542107359457,
+        "labels": "['back', 'in progress']" 
     },
-    {
-        "_id": "abc128",
-        "title": "Missing icons in navbar",
-        "description": "Icons do not appear in the navbar",
-        "severity": 2,
-        "createdAt": 1542107359459
+
+    { 
+        "_id": "abc127", 
+        "title": "API response delay", 
+        "description": "API takes too long to respond", 
+        "severity": 3, 
+        "createdAt": 1542107359458,
+        "labels": "['front', 'fixed']" 
     },
-    {
-        "_id": "abc129",
-        "title": "Error message not clear",
-        "description": "The error message displayed is too vague",
-        "severity": 1,
-        "createdAt": 1542107359460
+
+    { 
+        "_id": "abc128", 
+        "title": "Missing icons in navbar", 
+        "description": "Icons do not appear in the navbar", 
+        "severity": 2, 
+        "createdAt": 1542107359459,
+        "labels": "['back', 'fixed']"  
     },
-    {
-        "_id": "abc130",
-        "title": "Login issues",
-        "description": "User cannot log in after registration",
-        "severity": 4,
-        "createdAt": 1542107359461
+
+    { 
+        "_id": "abc129", 
+        "title": "Error message not clear", 
+        "description": "The error message displayed is too vague", 
+        "severity": 1, 
+        "createdAt": 1542107359460,
+        "labels": "['front', 'critical']" 
     },
-    {
-        "_id": "abc131",
-        "title": "Incorrect price displayed",
-        "description": "Price shown is incorrect in the product page",
-        "severity": 3,
-        "createdAt": 1542107359462
+
+    { 
+        "_id": "abc130", 
+        "title": "Login issues", 
+        "description": "User cannot log in after registration", 
+        "severity": 4, 
+        "createdAt": 1542107359461,
+        "labels": "['critical', 'front','stuck']" 
     },
-    {
+
+    { 
+        "_id": "abc131", 
+        "title": "Incorrect price displayed", 
+        "description": "Price shown is incorrect in the product page", 
+        "severity": 3, 
+        "createdAt": 1542107359462,
+        "labels": "['critical', 'back','stuck']" 
+         
+    },
+
+    { 
         "_id": "abc132",
-        "title": "Broken image links",
-        "description": "Some images are not loading on the site",
-        "severity": 2,
-        "createdAt": 1542107359463
-    }
+         "title": "Broken image links", 
+         "description": "Some images are not loading on the site", 
+         "severity": 2, 
+         "createdAt": 1542107359463,
+         "labels": "['front','stuck','in progress']"  
+        }
 ]
