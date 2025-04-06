@@ -23,3 +23,12 @@
 4.4.2025, 23:35:25 - INFO - Server listening on port http://127.0.0.1:3031/
 4.4.2025, 23:35:37 - INFO - Server listening on port http://127.0.0.1:3031/
 5.4.2025, 12:21:45 - INFO - Server listening on port http://127.0.0.1:3031/
+5.4.2025, 21:34:44 - INFO - Server listening on port http://127.0.0.1:3031/
+5.4.2025, 21:35:53 - DEBUG - req.query | {"title":"Cannot save a new car","description":"Problem when clicking Save","severity":"2","_id":"abc123"}
+6.4.2025, 10:40:58 - INFO - Server listening on port http://127.0.0.1:3031/
+6.4.2025, 10:45:32 - INFO - Server listening on port http://127.0.0.1:3031/
+6.4.2025, 10:47:40 - INFO - Server listening on port http://127.0.0.1:3031/
+6.4.2025, 11:24:16 - INFO - Bug abc125 removed
+6.4.2025, 11:27:40 - INFO - Server listening on port http://127.0.0.1:3031/
+6.4.2025, 11:28:01 - INFO - Server listening on port http://127.0.0.1:3031/
+6.4.2025, 11:28:27 - INFO - Server listening on port http://127.0.0.1:3031/

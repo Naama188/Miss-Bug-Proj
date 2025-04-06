@@ -12,21 +12,57 @@ export const bugService = {
 
 const bugs = utilService.readJsonFile('data/bugs.json')
 
-function query () {
-    return Promise.resolve(bugs)
+function query(queryOptions) {
+    const { filterBy, sortBy, pagination } = queryOptions
+    var bugsToReturn = [ ...bugs ]
+
+    if (filterBy.txt) {
+        const regExp = new RegExp(filterBy.txt, 'i')
+        bugsToReturn = 
+            bugsToReturn.filter(bug => regExp.test(bug.title))
+    }
+
+    if (filterBy.minSeverity) {
+        bugsToReturn = 
+            bugsToReturn.filter(bug => bug.severity >= filterBy.minSeverity)
+    }
+
+    if (filterBy.labels && filterBy.labels.length > 0) {
+        bugsToReturn = 
+            bugsToReturn.filter(bug => 
+                filterBy.labels.some(label => bug?.labels?.includes(label)))
+    }
+
+    if (sortBy.sortField === 'severity' || sortBy.sortField === 'createdAt') {
+        const { sortField } = sortBy
+
+        bugsToReturn.sort((bug1, bug2) => 
+            (bug1[sortField] - bug2[sortField]) * sortBy.sortDir)
+    } else if (sortBy.sortField === 'title') {
+        bugsToReturn.sort((bug1, bug2) => 
+            (bug1.title.localeCompare(bug2.title)) * sortBy.sortDir)
+    } 
+
+    if (pagination.pageIdx !== undefined) {
+        const { pageIdx, pageSize} = pagination
+        
+        const startIdx = pageIdx * pageSize
+        bugsToReturn = bugsToReturn.slice(startIdx, startIdx + pageSize)
+    }
+
+    return Promise.resolve(bugsToReturn)
 }
 
 function getById(bugId) {
     const bug = bugs.find(bug => bug._id === bugId)
-    if(!bug) return Promise.reject('Cannot find bug -' + bugId)
+    if(!bug) return Promise.reject('Cannot find bug')
         return Promise.resolve(bug)
 }
 
 function remove(bugId) {
-    const bugIdx = bugs.findIndex(bug => bug._id === bugId)
-    if(bugIdx === -1) return Promise.reject('Cannot remove bug -' + bugId)
-        bugs.splice(bugIdx,1)
-        return _saveBugsToFile()
+    const idx = bugs.findIndex(bug => bug._id === bugId)
+    bugs.splice(idx, 1)
+    return _saveBugsToFile()
 }
 
 function save(bug) {
@@ -47,6 +83,7 @@ function _saveBugsToFile() {
         const data = JSON.stringify(bugs, null, 4)
         fs.writeFile('data/bugs.json', data, (err) => {
             if (err) {
+                loggerService.error('Cannot write to bugs file', err)
                 return reject(err)
             }
             resolve()
