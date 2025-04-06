@@ -2,7 +2,7 @@
     {
         "title": "Button not responsive",
         "description": "Button does not respond to clicks",
-        "severity": 1,
+        "severity": 2,
         "labels": "['back', 'critical']",
         "_id": "ETKMN",
         "createdAt": 1743928409670
