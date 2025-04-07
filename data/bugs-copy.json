@@ -5,7 +5,12 @@
         "description": "Problem when clicking Save", 
         "severity": 3, 
         "createdAt": 1542107359454,
-        "labels": "['critical', 'need-CR', 'dev-branch','stuck']"
+        "labels": "['critical', 'need-CR', 'dev-branch','stuck']",
+        "creator": {
+            "_id": "fLtg9",
+            "fullname": "Admin Adminov",
+            "isAdmin": true
+        }
     },
 
     { 
@@ -14,7 +19,11 @@
         "description": "App crashes after clicking submit button", 
         "severity": 2, 
         "createdAt": 1542107359455,
-        "labels": "['front', 'in progress']" 
+        "labels": "['front', 'in progress']",
+        "creator": {
+            "_id": "oLRch",
+            "fullname": "Lala Shilo"
+        }
     },
 
     { 
@@ -23,7 +32,11 @@
         "description": "Button does not respond to clicks", 
         "severity": 1, 
         "createdAt": 1542107359456 ,
-        "labels": "['back', 'critical']"
+        "labels": "['back', 'critical']",
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        }
     },
 
     { 
@@ -32,7 +45,12 @@
         "description": "Form inputs are not validated properly", 
         "severity": 4, 
         "createdAt": 1542107359457,
-        "labels": "['back', 'in progress']" 
+        "labels": "['back', 'in progress']",
+        "creator": {
+            "_id": "fLtg9",
+            "fullname": "Admin Adminov",
+            "isAdmin": true
+        } 
     },
 
     { 
@@ -41,7 +59,11 @@
         "description": "API takes too long to respond", 
         "severity": 3, 
         "createdAt": 1542107359458,
-        "labels": "['front', 'fixed']" 
+        "labels": "['front', 'fixed']",
+        "creator": {
+            "_id": "cQMMn",
+            "fullname": "Gigi Gu"
+        } 
     },
 
     { 
@@ -50,7 +72,12 @@
         "description": "Icons do not appear in the navbar", 
         "severity": 2, 
         "createdAt": 1542107359459,
-        "labels": "['back', 'fixed']"  
+        "labels": "['back', 'fixed']",
+        "creator": {
+            "_id": "IsHQv",
+            "fullname": "Nina Simantov",
+            "isAdmin": false
+        }  
     },
 
     { 
@@ -59,7 +86,11 @@
         "description": "The error message displayed is too vague", 
         "severity": 1, 
         "createdAt": 1542107359460,
-        "labels": "['front', 'critical']" 
+        "labels": "['front', 'critical']",
+        "creator": {
+            "_id": "u101",
+            "fullname": "Puki Ja"
+        } 
     },
 
     { 
@@ -68,7 +99,12 @@
         "description": "User cannot log in after registration", 
         "severity": 4, 
         "createdAt": 1542107359461,
-        "labels": "['critical', 'front','stuck']" 
+        "labels": "['critical', 'front','stuck']",
+        "creator": {
+            "_id": "fLtg9",
+            "fullname": "Admin Adminov",
+            "isAdmin": true
+        } 
     },
 
     { 
@@ -77,7 +113,11 @@
         "description": "Price shown is incorrect in the product page", 
         "severity": 3, 
         "createdAt": 1542107359462,
-        "labels": "['critical', 'back','stuck']" 
+        "labels": "['critical', 'back','stuck']",
+        "creator": {
+            "_id": "oLRch",
+            "fullname": "Lala Shilo"
+        } 
          
     },
 
@@ -87,6 +127,11 @@
          "description": "Some images are not loading on the site", 
          "severity": 2, 
          "createdAt": 1542107359463,
-         "labels": "['front','stuck','in progress']"  
+         "labels": "['front','stuck','in progress']",
+         "creator": {
+            "_id": "IsHQv",
+            "fullname": "Nina Simantov",
+            "isAdmin": false
+        }   
         }
 ]
